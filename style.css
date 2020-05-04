@@ -1,7 +1,12 @@
 body {
   font-family: "Inter", sans-serif;
-  padding: 45px 150px;
+  padding: 30px 90px 20px 120px;
   margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
 }
 
 #dark-theme {
@@ -48,8 +53,69 @@ h6 {
   font-size: 12px;
 }
 
+.btn-theme {
+  display: flex;
+  margin-right: 35px;
+}
+
+.btn-theme h4 {
+  color: #fff;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.dark-light-checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+.dark-light-btn {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+}
+
+.dark-light-btn::before,
+.dark-light-btn::after {
+  content: "";
+  transition: all 0.3s ease;
+}
+
+.dark-light-btn::before {
+  display: inline-block;
+  width: 49px;
+  height: 23px;
+  background-image: linear-gradient(
+    -90deg,
+    hsl(146, 68%, 55%),
+    hsl(210, 78%, 56%)
+  );
+  border-radius: 12px;
+}
+
+.dark-light-btn::after{
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 100%;
+}
+
+.dark-light-checkbox:checked + .dark-light-btn::before {
+  background: hsl(230, 22%, 74%);
+}
+
+.dark-light-checkbox:checked + .dark-light-btn::after{
+  left: 29px;
+  background-color:  hsl(0, 0%, 100%);
+  right: 3px;
+}
+
 #bg-card-list {
-  margin: 40px 0;
+  margin: 30px 0;
 }
 
 .sm-card-list {
@@ -64,6 +130,10 @@ h6 {
   background-color: hsl(228, 28%, 20%);
   margin-right: 35px;
   border-radius: 6px;
+}
+
+.bg-card:hover, .sm-card:hover {
+  background-color: hsl(229, 20%, 22%);
 }
 
 .sm-card {
@@ -153,4 +223,42 @@ h6 {
 
 #row-youtube {
   background-color: hsl(348, 97%, 39%);
+}
+
+
+/******* LIGHT ***********/
+
+#light-theme .bg-card,
+#light-theme .sm-card {
+  background-color: 
+  hsl(227, 47%, 96%);
+}
+
+#light-theme h4, #light-theme h5, #light-theme h6 {
+  color: hsl(228, 12%, 44%);
+}
+
+#light-theme .access h6 {
+  color: hsl(163, 72%, 41%);
+}
+
+#light-theme #bg-card-last .access h6 {
+  color: hsl(356, 69%, 56%);
+}
+
+#light-theme .sm-card-down .access h6{
+  color: hsl(356, 69%, 56%);
+}
+
+#light-theme .bg-card:hover, #light-theme .sm-card:hover {
+  background-color: hsl(227, 12%, 86%);
+}
+
+.attribution {
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(163, 72%, 41%);
+  text-decoration: none;
 }
