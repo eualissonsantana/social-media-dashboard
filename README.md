@@ -3,7 +3,7 @@
 ### Dark Theme
 ![active-states-dark](https://user-images.githubusercontent.com/40476367/80998741-dc536180-8e19-11ea-8410-d5afdcc84d2b.jpg)
 ### Light Theme
-![active-states-light](https://user-images.githubusercontent.com/40476367/80998827-0016a780-8e1a-11ea-8e5d-44839db8154b.jpg)
+![desktop-design-light](https://user-images.githubusercontent.com/40476367/80999014-5257c880-8e1a-11ea-9bc3-611f97dbcdd8.jpg)
 
 ## Página desenvolvida
 ### Dark Theme
